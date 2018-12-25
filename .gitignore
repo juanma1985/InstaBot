@@ -88,6 +88,7 @@ fabric.properties
 
 # Log file
 *.log
+*.iml
 
 # BlueJ files
 *.ctxt
@@ -96,11 +97,11 @@ fabric.properties
 .mtj.tmp/
 
 # Package Files #
-*.jar
+#*.jar
 *.war
 *.nar
 *.ear
-*.zip
+#*.zip
 *.tar.gz
 *.rar
 
