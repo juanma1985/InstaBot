@@ -74,6 +74,7 @@ public class HashTagResultPage {
         try {
             WebElement commentField = post.findElement(By.xpath("//textarea[@aria-label='Add a comment…']"));
             commentField.sendKeys(comment);
+            commentField.sendKeys(Keys.ENTER);
         } catch (Exception e) {
             WebElement commentField = post.findElement(By.xpath("//textarea[@aria-label='Add a comment…']"));
             commentField.sendKeys(comment);
@@ -112,7 +113,8 @@ public class HashTagResultPage {
             WebElement likeButton = post.findElement(By.xpath("//span[@aria-label='Like']"));
             likeButton.click();
         } catch (Exception e) {
-            // do nothing
+            WebElement likeButton = post.findElement(By.xpath("//span[@aria-label='Like']"));
+            likeButton.click();
         }
         Thread.sleep(1000);
         closePost(post);

@@ -13,18 +13,18 @@ public class InstaBot {
     private static final String USER_NAME = "juan.baragli@gmail.com";
     private static final String PASSWORD = "test123";
 
-    private static final String HASH_TAG = "#food";
+    private static final String HASH_TAG = "#foodporn";
     private static final String COMMENT = "Cooool!";
 
     private static WebDriver driver;
 
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty(WEB_DRIVER, WINDOWS_WEB_DRIVER_PATH);
+        System.setProperty(WEB_DRIVER, MAC_WEB_DRIVER_PATH);
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
-        removeFollowings();
-//        followUsersWhoLikedThePosts();
+//        removeFollowings();
+        followUsersWhoLikedThePosts();
 //        commentPosts();
 //        likePosts();
 //        likePostsAndCommentPostsAndFollowUsersWhoLikedThePosts();
