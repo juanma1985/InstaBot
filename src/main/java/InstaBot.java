@@ -19,7 +19,7 @@ public class InstaBot {
     private static WebDriver driver;
 
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty(WEB_DRIVER, MAC_WEB_DRIVER_PATH);
+        System.setProperty(WEB_DRIVER, WINDOWS_WEB_DRIVER_PATH);
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
