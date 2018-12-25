@@ -8,7 +8,7 @@ public class InstaBot {
 
     private static final String WEB_DRIVER = "webdriver.chrome.driver";
     private static final String WINDOWS_WEB_DRIVER_PATH = ".\\driver\\chromedriver.exe";
-    private static final String MAC_WEB_DRIVER_PATH = ".\\driver\\chromedriver";
+    private static final String MAC_WEB_DRIVER_PATH = "driver/chromedriver";
 
     private static final String USER_NAME = "juan.baragli@gmail.com";
     private static final String PASSWORD = "test123";
@@ -19,7 +19,7 @@ public class InstaBot {
     private static WebDriver driver;
 
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty(WEB_DRIVER, WINDOWS_WEB_DRIVER_PATH);
+        System.setProperty(WEB_DRIVER, MAC_WEB_DRIVER_PATH);
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
